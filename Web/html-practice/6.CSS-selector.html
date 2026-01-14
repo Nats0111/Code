@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selector</title>
+    <style>
+      /*Element selector*/
+      h2 {
+        color: antiquewhite;
+      }
+      /*Class selector*/
+      .highlight {
+        background-color: blue;
+      }
+      /*ID selector*/
+      #header {
+        font-size: 36px;
+      }
+      /*Global selector*/
+      * {
+        font-family: "Segoe UI";
+      }
+      /*Child selector*/
+      .father > .son {
+        color: chartreuse;
+        font-weight: bold;
+      }
+      /*後代選擇器*/
+      .father p {
+        color: darkgreen;
+        font-size: larger;
+      }
+      /*相鄰兄弟選擇器*/
+      h3 + p {
+        color: dodgerblue;
+      }
+      /*偽選擇器*/
+      #element:hover {
+        background-color: blueviolet;
+      }
+
+      /*
+      選中第一個子元素:first-child
+                     :nth-child()
+                     :active
+      */
+      /*偽元素選擇器
+        ::after
+        ::before
+      */
+    </style>
+  </head>
+  <body>
+    <h1>Different types of CSS selector</h1>
+
+    <h2>This is an element selector example</h2>
+    <h3 class="highlight">This is a class selector example</h3>
+    <h3>This is another class selector example</h3>
+
+    <h4 id="header">This is an ID selector example</h4>
+
+    <div class="father">
+      <p class="son">This is a child selector example</p>
+      <div>
+        <p class="grandson">後代選擇器 example</p>
+      </div>
+    </div>
+
+    <p>This is a normal p tag</p>
+    <h3>相鄰兄弟選擇器</h3>
+    <p>This is another p tag</p>
+
+    <h3 id="element">偽選擇器Example Hover can change color</h3>
+  </body>
+</html>
