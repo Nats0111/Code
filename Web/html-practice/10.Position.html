@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      .box1 {
+        height: 350px;
+        background-color: aquamarine;
+      }
+      .box-normal {
+        width: 100px;
+        height: 100px;
+        background-color: blueviolet;
+      }
+      .box-relative {
+        width: 100px;
+        height: 100px;
+        background-color: darkred;
+        position: relative;
+        left: 200px;
+        top: 50px;
+      }
+      .box2{
+        height: 350px;
+        background-color: goldenrod;
+        margin-bottom: 150px;
+      }
+      .box-absoulte {
+        width: 100px;
+        height: 100px;
+        background-color: cadetblue;
+        position: absolute;
+        left: 200px;
+      }
+      .box-fixed {
+        width: 100px;
+        height: 100px;
+        background-color: brown;
+        position: fixed;
+        right: 0;
+        top: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Relative Position</h1>
+    <div class="box1">
+      <div class="box-normal"></div>
+      <div class="box-relative"></div>
+      <div class="box-normal"></div>
+    </div>
+    <h1>Absoulte Position</h1>
+    <div class="box2">
+      <div class="box-normal"></div>
+      <div class="box-absoulte"></div>
+      <div class="box-normal"></div>
+    </div>
+    <h1>Fixed Position</h1>
+    <div class="box-fixed"></div>
+  </body>
+</html>
