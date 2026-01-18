@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Event</title>
+  </head>
+  <body>
+    <button onclick="click_event()">This is a onClick button</button>
+    <input
+      type="text"
+      placeholder="Enter"
+      onfocus="focus_event()"
+      onblur="blur_event()"
+    />
+    <script>
+      //onClick
+      function click_event() {
+        alert("Click event has been triggered");
+      }
+      //onFocus
+      function focus_event() {
+        console.log("Got focused");
+      }
+      //onBlur
+      function blur_event() {
+        console.log("Got blured");
+      }
+    </script>
+  </body>
+</html>

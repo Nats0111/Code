@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM</title>
+  </head>
+  <body>
+    <div id="box1">This is a ID selector tag</div>
+    <div class="box2">This is a Class selector tag</div>
+    <div>This is a normal div tag</div>
+
+    <button>DOM onClicking</button>
+
+    <script>
+      let element_id = document.getElementById("box1");
+      console.log(element_id);
+      let element_class = document.getElementsByClassName("box2")[0];
+      console.log(element_class);
+      let element_tag = document.getElementsByTagName("div")[2];
+      console.log(element_tag);
+
+      element_id.innerHTML = '<a href="#">innerHTML modified Redierct link</a>';
+      element_class.innerText = '<a href="#">Redierct link</a>';
+
+      element_tag.style.color = "red";
+      element_tag.style.fontSize = "20px";
+
+      //DOM 屬性綁定事件
+      let button_element = document.getElementsByTagName("button")[0];
+      console.log(button_element);
+
+      //   button_element.onclick = function() {
+      //     alert('DOM 屬性按鍵觸發');
+      //   }
+
+      button_element.addEventListener("click", function () {
+        alert("透過eventListener觸發事件");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Function</title>
+  </head>
+  <body>
+    <script>
+      function hello() {
+        console.log("Hello World!");
+      }
+      hello();
+
+      function hello_return() {
+        return "Hello, world! - return value";
+      }
+
+      let a = hello_return();
+      console.log(a);
+      console.log(hello_return());
+
+      function hello_with_params(name) {
+        console.log(`hello, ${name}!`);
+      }
+
+      hello_with_params("Ray");
+      hello_with_params("小李");
+
+      function hello_return_params(age) {
+        return `Hello, i am ${age} years old`;
+      }
+      console.log(hello_return_params(20));
+
+      //作用域
+      let global_var = "Global variables";
+      function local_var_func() {
+        let local_var = "Local variables";
+        console.log(`函數內輸出全域變數 ${global_var}`);
+        console.log(`函數內輸出局部變數 ${local_var}`);
+      }
+
+      local_var_func();
+      console.log(`函數內輸出全域變數 ${global_var}`);
+      console.log(`函數內輸出局部變數 ${local_var}`); //undefined
+    </script>
+  </body>
+</html>

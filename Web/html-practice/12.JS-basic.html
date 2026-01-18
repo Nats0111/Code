@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS basic</title>
+  </head>
+  <body>
+    <script>
+      var x;
+      let y = 5;
+      const PI = 3.14;
+      console.log(x, y, PI);
+      let name = "Ray";
+      console.log(name);
+      let empty_value = null;
+      console.log(empty_value);
+
+      let age = 20;
+      if (age >= 18) {
+        console.log("You are an adult!");
+      } else {
+        console.log("You are not an adult");
+      }
+
+      let time = 20;
+      if (time < 12) {
+        console.log("Good Morning!");
+      } else if (time == 12) {
+        console.log("Good Day!");
+      } else if (time > 18) {
+        console.log("Good Evening!");
+      } else {
+        console.log("Good afternoon!");
+      }
+
+      console.log("For cycle");
+      for (let i = 1; i <= 10; i++) {
+        console.log(i);
+      }
+      console.log("While cycle");
+      let count = 1;
+      while (count <= 10) {
+        console.log(count);
+        count++;
+      }
+      console.log("Break,Contiune");
+      for (let i = 0; i <= 7; i++) {
+        if (i == 2) {
+          continue;
+        }
+        if (i == 5) {
+          break;
+        }
+        console.log(i);
+      }
+    </script>
+  </body>
+</html>
