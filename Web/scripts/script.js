@@ -1,19 +1,10 @@
-let myAge = 20; //Sets a variable to my age
-let earlyYears = 2;
-earlyYears *= 10.5;
-
-laterYears = myAge - 2;
-laterYears *= 4;
-
-console.log(myAge);
-console.log(earlyYears);
-console.log(laterYears);
-
-myAgeInDogYears = earlyYears + laterYears;
-
-let myName = "Ray".toLowerCase();
-console.log(myName);
-
-console.log(
-  `My name is ${myName}. I am ${myAge} years old in human years, which is ${myAgeInDogYears} years old in dog years.`
-);
+let element_dark_button = document.getElementById("black");
+console.log(element_dark_button);
+element_dark_button.addEventListener("click", function () {
+  document.body.style.backgroundColor = "black";
+});
+let element_white_button = document.getElementById("white");
+console.log(element_white_button);
+element_white_button.addEventListener("click", function () {
+  document.body.style.backgroundColor = "white";
+});
