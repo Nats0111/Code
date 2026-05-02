@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="aaa"></div>
+    <div class="abc"></div>
+    <button onclick="changeColor()">Change</button>
+    <script>
+      let flag = 0;
+      $("#aaa").html("Jquery動態產生文字");
+      $(".abc").html("Jquery動態產生文字");
+      function changeColor() {
+        if (flag == 0) {
+          $("#aaa").css("background-color", "black");
+          $("#aaa").css("color", "white");
+          flag = 1;
+        } else {
+          $("#aaa").css("background-color", "red");
+          $("#aaa").css("color", "black");
+          flag = 0;
+        }
+      }
+    </script>
+  </body>
+</html>
